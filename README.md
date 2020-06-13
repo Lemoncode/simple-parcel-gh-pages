@@ -1,1 +1,0 @@
-# simple-parcel-gh-pages
