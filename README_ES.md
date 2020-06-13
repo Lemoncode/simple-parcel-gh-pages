@@ -33,7 +33,7 @@ que indicarle la URL destino:
   "scripts": {
     "build": "rimraf dist && parcel ./src/index.html",
     "build:prod": "rimraf dist && parcel build ./src/index.html",
-+   "build:gh-pages": "tsc --noEmit && rimraf dist && parcel build ./src/index.html --public-url https://brauliodiez.github.io/simple-parcel-gh-pages/"
++   "build:gh-pages": "tsc --noEmit && rimraf dist && parcel build ./src/index.html --public-url https://lemocnode.github.io/simple-parcel-gh-pages/"
 ```
 
 - Ahora si, ejecutamos el comando:
