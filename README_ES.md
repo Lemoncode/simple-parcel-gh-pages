@@ -21,7 +21,7 @@ Hacemos commit y push
 
 Abrimos el navegador y vamos a navegar a la siguiente ruta:
 
-https://brauliodiez.github.io/simple-parcel-gh-pages
+https://lemoncode.github.io/simple-parcel-gh-pages/
 
 Ooops... algo no ha ido bien, resulta que para que Parcel haga bien el bundle tenemos
 que indicarle la URL destino:
@@ -33,7 +33,7 @@ que indicarle la URL destino:
   "scripts": {
     "build": "rimraf dist && parcel ./src/index.html",
     "build:prod": "rimraf dist && parcel build ./src/index.html",
-+   "build:gh-pages": "tsc --noEmit && rimraf dist && parcel build ./src/index.html --public-url https://lemocnode.github.io/simple-parcel-gh-pages/"
++   "build:gh-pages": "tsc --noEmit && rimraf dist && parcel build ./src/index.html --public-url https://lemoncode.github.io/simple-parcel-gh-pages/"
 ```
 
 - Ahora si, ejecutamos el comando:
@@ -54,7 +54,7 @@ npm run build:gh-pages
 
 - Vamos a ver si ya se ve correctamente
 
-https://brauliodiez.github.io/simple-parcel-gh-pages
+https://lemoncode.github.io/simple-parcel-gh-pages/
 
 # Agradecimientos
 
