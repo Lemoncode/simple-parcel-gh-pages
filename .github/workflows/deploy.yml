@@ -1,0 +1,19 @@
+name: Deploy app
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build:gh-pages
+      - name: Deploy
+        run: npm run deploy:gh-pages

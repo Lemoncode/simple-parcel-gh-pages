@@ -6,7 +6,7 @@ export const SumComponent: React.FC = () => {
 
   return (
     <>
-      <h2>Sum two numbers:</h2>
+      <h2>Sum three numbers:</h2>
       <input value={numberA} onChange={(e) => setNumberA(+e.target.value)} />
       +
       <input value={numberB} onChange={(e) => setNumberB(+e.target.value)} />=
