@@ -11,6 +11,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Use SSH key
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+          sudo chmod 600 ~/.ssh/id_rsa
+      - name: Git user config
+        run: |
+          git config --global user.email "ci@lemoncode.net"
+          git config --global user.name "ci"
       - name: Install
         run: npm install
       - name: Build
