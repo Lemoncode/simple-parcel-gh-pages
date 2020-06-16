@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: npm run build:gh-pages
       - name: Deploy
-        run: npm run deploy:gh-pages -- -r git@github.com:Nasdan/simple-parcel-gh-pages.git
+        run: npm run deploy:gh-pages -- -r git@github.com:Lemoncode/simple-parcel-gh-pages.git
